@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiente"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnMainLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:text="Login"
+                    android:backgroundTint="@color/primary_dark"
+                    app:icon="@drawable/ic_outline_login_24"
+                    android:textSize="16sp"/>
+
+                <Button
+                    android:id="@+id/btnMainRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:text="Register"
+                    app:icon="@drawable/ic_baseline_how_to_reg_24"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_marginTop="-220dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/cart"
+        app:shapeAppearance="@style/ShapeAppearance.App.CircleImageView"/>
+
+</RelativeLayout>
